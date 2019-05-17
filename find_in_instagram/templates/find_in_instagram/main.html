@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Поиск изображений в Instagram</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'icon/111.png' %}"/>
+        <link rel="stylesheet" href="{% static 'css/find_in_instagram.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1>Поиск изображений в Instagram</h1>
+            <br><a href="{% url 'find_image_url' %}">Поиск изображения по дате</a>
+            <br><a href="{% url 'check_status_url' %}">Проверить статус поиска</a>
+        </div>
+    </body>
+</html>

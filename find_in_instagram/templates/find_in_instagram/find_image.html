@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Поиск изображения</title>
+    <link rel="stylesheet" href="{% static 'css/find_in_instagram.css' %}">
+</head>
+<body>
+    <div class="upload_data">
+        <form method="post" class="up_date">
+            {% csrf_token %}
+            <div class="container">
+                <table width="15%" border="1">
+                    <tr><th>Формат даты:</th></tr>
+                    <tr><td>2019/05/12</td></tr>
+                    <!--<tr><td>10/25/2006</td></tr>
+                    <tr><td>10/25/06</td></tr>-->
+                </table>
+                <table width="15%" border="1">
+                    <tr><th>Формат тегов: </th></tr>
+                    <tr><td>Количество тегов: 1</td></tr>
+                    <!--<tr><td>Разделитель: пробел</td></tr>-->
+                </table>
+            </div>
+            <div class="container2">
+                <div>
+                    <table>{{ date_form.as_table }}</table>
+                    <input type="submit" value="Поиск">
+                </div>
+            </div>
+        </form>
+        <div class="div_task_id">Идентификатор задачи: {{ task_id}}</div>
+    </div>
+    <h1><a href="{% url 'main_menu_url' %}">Переход в главное меню...</a></h1>
+</body>
+</html>

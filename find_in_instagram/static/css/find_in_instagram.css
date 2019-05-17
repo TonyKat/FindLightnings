@@ -1,0 +1,64 @@
+.page-header {
+    background-color: dodgerblue;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header a{
+    color: black;
+    margin-top: 0;
+    font-size: 26pt;
+}
+
+.upload_data {
+    background-color: lightseagreen;
+    font-size: 14pt;
+}
+
+.check_status {
+    background-color: greenyellow;
+    font-size: 14pt;
+}
+
+.body_error {
+    background-color: lightgray;
+    font-size: 14pt;
+}
+
+.container {
+  display: inline-flex;
+  justify-content: space-between;
+  /*background-color: lightslategray;*/
+  padding: 1em;
+  box-sizing: content-box;
+}
+
+.container table {
+    padding: 10px;
+    width: 15em;
+    height: 5em;
+    background-color: burlywood;
+}
+
+.container2 {
+    display: block;
+    justify-content: space-between;
+    padding: 1em;
+    box-sizing: content-box;
+}
+
+.container2 div {
+    padding: 10px;
+    width: 29em;
+    height: 6em;
+    background-color: burlywood;
+    border: 1px solid gray
+}
+
+.div_task_id {
+    /*font-weight: bold;*/
+    display: flex;
+    justify-content: normal;
+    padding: 1em;
+    box-sizing: content-box;
+}

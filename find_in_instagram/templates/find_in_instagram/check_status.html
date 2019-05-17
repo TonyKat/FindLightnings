@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка статуса задачи</title>
+    <link rel="stylesheet" href="{% static 'css/find_in_instagram.css' %}">
+</head>
+<body>
+    <div>
+        <form method="post" class="check_status">
+            {% csrf_token %}
+            <div>
+                {{ check_status_form }}
+            </div>
+            <div>
+                Идентификатор: {{ task_id }}
+                <br>Статус: {{ status }}
+            </div>
+            <input type="submit" value=Проверить>
+            {% if download_url %}
+            <div>
+                <br>
+                {{ download_url }}
+            </div>
+            {% endif %}
+        </form>
+    </div>
+    <br><h1><a href="{% url 'main_menu_url' %}">Переход в главное меню...</a></h1>
+</body>
+</html>
